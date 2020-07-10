@@ -1,5 +1,12 @@
 # creating a GUI window using Python Tkinter library
 from tkinter import *
+
+def click_me():     #button press cheithu kazhinjal athil nalkirikkunn ee function ayathukondu ethinde ullil enthano
+    # nalkirikkunnath athu print cheyyukayo work cheyyukayo cheyyunnu
+    
+    label2=Label(window, text='welcome')
+    label2.pack()
+
 window=Tk()     #frame creat cheyyan oru class ne call cheyyanam athanu Tk()
 
 window.geometry('800x400')     # ithu upayogikkunnathu creat cheitha windowinde size (width & hight) kramikarikan
@@ -17,12 +24,14 @@ label.pack()     # ithu upayogikunnathu nammal nalkirikkunna label main windowil
 
 # main widowil nammal oru button creat cheyyunnu
 
-button=Button(window, text='Clickme', bg='yellow', fg='red', font=('courir',30), width=20, height=3)
+button=Button(window, text='Clickme', bg='yellow', fg='red', font=('courir',30), width=20, height=3, activebackground='green', activeforeground='blue', command=click_me)
 #'window' enna objectiloode button main windowleku call chethu
 #'text=' ethil buttonil enth text anu display akandathu athu nalkunnu
 #'font=("style", size) buttonde text le stylum sizum mattunnu
 #'bg & fg' ethu buttonile textindeyum backgroundindeyum colour mattunnu
 #'height & width' ithu buttonde size adjest cheyyunnu
+#'activebackground & activeforeground' is the button color and text color change to courser enter to button
+#'command' upayogikkunnathu enthu functionanu button cheyyandathu athine aa functionilekku call cheithu work cheyyunnu
 
 button.pack() # creat cheitha button main windowil display cheyikkunnu
 
