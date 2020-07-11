@@ -42,4 +42,13 @@ canvas=Canvas(window, width=500, height=400, bg='orange')     # windowil canvas 
 
 canvas.pack()
 
+canvas.create_line(0, 0, 500, 400, width=5, fill='pink', dash=(3,3))
+canvas.create_line(0, 400, 500, 0, width=5, fill='pink', dash=(3,3))
+
+#creat_line() ithu oru line canvasil creat cheyyuvan upayogikkunnu
+# 0, 0, 500, 400 ee values creat cheyyunna lininte randattathulla X axis Y axis valueskalanu
+# 'width=' lininte strength koottunnu
+# 'fill=' lininte color mattunnu
+# 'dash=' linine dot reethiyil print cheyyunnu
+
 window.mainloop()# ithinte upayogam ee program start cheitha muthal end cheyyunna vare main window closs agthirikkananu
