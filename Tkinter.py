@@ -51,4 +51,12 @@ canvas.create_line(0, 400, 500, 0, width=5, fill='pink', dash=(3,3))
 # 'fill=' lininte color mattunnu
 # 'dash=' linine dot reethiyil print cheyyunnu
 
+canvas.create_rectangle(150, 125, 450, 375, fill='green', outline='blue', width=5)
+
+# creat_rectangle() ithu canvasil rectangle creat cheyan upayogikunnu
+# 150, 125, 450, 375 ee values rectanglinte 4 cornerne depend cheyunnu
+# fill= rectanglinte background color mattan upayogikkunnu
+# outline= ithu rectanglinte border lininte color mattunnu
+# width= lininte strength kootunnu
+
 window.mainloop()# ithinte upayogam ee program start cheitha muthal end cheyyunna vare main window closs agthirikkananu
